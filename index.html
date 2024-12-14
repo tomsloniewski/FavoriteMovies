@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<script src="scripts.js"></script>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My favorite movies to watch</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="container mov-titles">
+                <div class="row">
+                    <div class="column">
+                        <h2>Titles</h2>
+                        <ul id="moviesList"></ul>
+                        <button onclick="deleteMovies()"><i class="fa-solid fa-trash-can"></i> Delete selected</button>
+                    </div>
+                    <div class="column">
+                        <h2>Add movie</h2>
+                        Title:
+                        <input type="text" id="inputTitle">
+                        <br>Year:
+                        <input type="number" min="1800" max="2099" id="inputYear">
+                        <br>Actors:
+                        <input id="inputActors" type="text">
+                        <br><button onclick="addMovie()"><i class="fa-solid fa-plus"></i> Add</button>
+                        <button onclick="clearInputs()"><i class="fa-solid fa-broom"></i>Clear</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    Footer 2024
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
